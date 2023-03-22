@@ -1,12 +1,31 @@
-export const templates = {
-  menuProduct: Handlebars.compile(document.querySelector(select.products).innerHTML),
-  home: Handlebars.compile(document.querySelector(select.templateOf.home).innerHTML),
-};
-
-export const settings = {
-  db: {
-    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
-  }
+export const select = {
+  templateOf: {
+    home: '#template-home',
+    menuProduct: '#template-products',
+    contact: '#template-contact',
+  },
+  containerOf: {
+    menu: '.producs__wrapper',
+    pages: '#pages',
+    home: '#home',
+  },
+  all: {
+    menuProducts: '#product-list > .product',
+    menuProductsActive: '#product-list > .product.active',
+  },
+  menuProduct: {
+    clickable: '.product__header',
+    form: '.product__order',
+    priceElem: '.product__total-price .price',
+    imageWrapper: '.product__images',
+    amountWidget: '.widget-amount',
+    cartButton: '[href="#add-to-cart"]',
+  },
+  
+  nav: {
+    links: '.main-nav a',
+  },
+  
 };
 
 export const classNames = {
@@ -14,26 +33,35 @@ export const classNames = {
     wrapperActive: 'active',
     imageVisible: 'active',
   },
+
+  cart: {
+    wrapperActive: 'active',
+  },
+  booking: {
+    loading: 'loading',
+    tableBooked: 'booked',
+  },
   nav: {
     active: 'active',
   },
   pages: {
     active: 'active',
   }
+
 };
 
-export const select = {
-  templateOf: {
-    home: '#template-products',
-  },
+export const settings = {
 
-  products: {
-    id: '#template-home',
-    title: '#template-menu-product',
-    description: '#template-cart-product',
-    roasting: '#template-booking-widget',
-    intensity: '#template-booking-widget',
-    popular: '#template-booking-widget',
-    image: '#template-booking-widget',
+  db: {
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+    products: 'products',
   },
+  
+};
+
+export const templates = {
+  menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
+  bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+  home: Handlebars.compile(document.querySelector(select.templateOf.home).innerHTML),
 };

@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 100pt;
+  font-family: $main-font;
+  color: $main-color;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+  
+h2 {
+  font-size: 75pt;
+  font-family: $main-font;
+  color: $main-color;
+  letter-spacing: 200;
+  text-transform: uppercase;
+}
+  
+h3 {
+  font-size: 48pt;
+  font-family: $main-font;
+  color: $main-color;
+  letter-spacing: 70;
+  text-transform: uppercase;
+}
+  
+h4 {
+  font-size: 48pt;
+  font-family: $body-font;
+  color: $main-color;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 30pt;
+}
+
+h5 {
+  font-size: 20pt;
+  font-family: $body-font;
+  color: $black-color;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 30pt;
+}
+
+h6 {
+  font-size: 20pt;
+  font-family: $body-font;
+  color: $main-color;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 30pt;
+}
+
+.product-description {
+  font-size: 15pt;
+  letter-spacing: 25;
+  font-family: $body-font;
+  line-height: 25pt;
+}
+  
+.footer {
+  font-size: 15pt;
+  letter-spacing: 25;
+  font-family: $body-font;
+  line-height: 25pt;
+}
+  

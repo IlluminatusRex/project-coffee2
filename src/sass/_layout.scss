@@ -1,0 +1,39 @@
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  display: inline-block;
+  line-height: 1;
+  
+
+  &__title {
+    margin: 0 0 $base-size 0;
+    font-size: ($base-size * 2);
+    font-family: $main-font;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 900;
+    color: $white-color;
+
+    span {
+      font-weight: $main-font;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: ($base-size * 1);
+    font-style: normal;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: $white-color;
+  }
+}

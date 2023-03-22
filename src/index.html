@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta name="description" content="Webpage description goes here">
+    <meta charset="utf-8">
+    <title>Change_me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="vendor/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+              <div class="header__wrapper row align-items-start">
+                <div class="logo col">
+                  <h1 class="logo__title">EL TIGRE</h1>
+                  <h2 class="logo__subtitle">VENEZUELA COFFEE BEANS</h2>
+                </div>
+                <div class="main-nav col">
+                  <a href="#home">Home</a>
+                  <a href="#products">Products</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
+              <div class="title__wrapper">
+                <div class="title">
+                  <h1 class="titile_baner">Home of</h1>
+                  <h1 class="titile_baner">original tastes</h1>
+                </div>
+                <div class="discover">
+                  <h4 class="discover_baner">discover</h4>
+                  <i class="icon-down"></i>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <div id="pages">
+          <section id="products">
+            <div id="product-list" class="product-list container"></div>
+          </section>
+          <section id="contactg">
+            <div class="contact-wrapper container"></div>
+          </section>
+          <section id="home">
+            <div id="home-page-wrapper" class="home-wrapper container"></div>
+          </section>
+        </div>
+        
+        <!--<script id="template-products" type="text/x-handlebars-template">-->
+          <div class="container">
+            <div class="row producs__wrapper">
+              <div class="col-12 products">
+                <h1>Products</h1></div>
+              <div class="w-100"></div>
+              <div class="col-5 offset-md-1">
+                <header class="product__header">
+                  <h4 class="product__name no-spacing">{{ name }}</h4>
+                </header>
+                <div class="product__description">
+                  <p>{{{ description }}}</p>
+                </div>
+                <div class="product__wrapper">
+                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
+                  <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
+                </div>
+              </div>
+              <div class="col-5 offset-md-1">
+                <div class="product__images {{ class }}"> <!-- images -->
+                  {{#each images}}
+                  {{{ this }}}
+                  {{/each}}
+                </div>
+              </div>
+              <div class="w-100"></div>
+              
+              <div class="col-5 offset-md-1">
+                <div class="product__images {{ class }}"> <!-- images -->
+                  {{#each images}}
+                  {{{ this }}}
+                  {{/each}}
+                </div>
+              </div>
+              <div class="col-5 offset-md-1">
+                <header class="product__header">
+                  <h4 class="product__name no-spacing">{{ name }}</h4>
+                </header>
+                <div class="product__description">
+                  <p>{{{ description }}}</p>
+                </div>
+                <div class="product__wrapper">
+                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
+                  <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
+                </div>
+              </div>
+              <div class="w-100"></div>
+
+              <div class="col-5 offset-md-1">
+                <header class="product__header">
+                  <h4 class="product__name no-spacing">{{ name }}</h4>
+                </header>
+                <div class="product__description">
+                  <p>{{{ description }}}</p>
+                </div>
+                <div class="product__wrapper">
+                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
+                  <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
+                </div>
+              </div>
+              <div class="col-5 offset-md-1">
+                <div class="product__images {{ class }}"> <!-- images -->
+                  {{#each images}}
+                  {{{ this }}}
+                  {{/each}}
+                </div>
+              </div>
+              <div class="w-100"></div>
+            </div>
+          </div>
+          <div class="row about__wrapper">
+            <h2>about us</h2>
+            <div class="container">
+              <p class="about_description">
+                Who are we? Just a bunch of friends with 
+                a love for a good coffee and desire to create
+                something new, something original. <br> <br> Our coffees reflect us - young, wild and free. 
+                We are on the journey of new tastes...
+              </p>
+              <p class="join__us">
+                Join us!
+              </p>
+            </div>
+          </div>
+
+        <!--</script>-->
+        
+        <footer>
+          <div class="container">
+            <p>
+              2021 EL TIGRE Inc.
+            </p>
+          </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+        <script src="js/app.js" type="module"></script>
+    </body>
+</html>

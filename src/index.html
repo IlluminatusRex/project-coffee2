@@ -4,7 +4,7 @@
     <head>
     <meta name="description" content="Webpage description goes here">
     <meta charset="utf-8">
-    <title>Change_me</title>
+    <title>EL TIGRE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,122 +42,84 @@
         </header>
 
         <div id="pages">
+          <section id="home">
+            <div id="home-page-wrapper" class="home-wrapper container">
+              <div class="col-12 products">
+                <h1>Products</h1></div>
+              <div class="product__list"></div>
+              <div class="row about__wrapper">
+                <h2>about us</h2>
+                <div class="container">
+                  <p class="about_description">
+                    Who are we? Just a bunch of friends with
+                    a love for a good coffee and desire to create
+                    something new, something original. <br> <br> Our coffees reflect us - young, wild and free.
+                    We are on the journey of new tastes...
+                  </p>
+                  <p class="join__us">
+                    Join us!
+                  </p>
+                </div>
+            </div>
+          </section>
           <section id="products">
-            <div id="product-list" class="product-list container"></div>
+            <div id="product-list" class="product-list container">
+              <div class="col-12 products">
+                <h1>Products</h1></div>
+              <div class="product__list"></div>
+            </div>
           </section>
           <section id="contact">
-            <div class="contact-wrapper container"></div>
-          </section>
-          <section id="home">
-            <div id="home-page-wrapper" class="home-wrapper container"></div>
+            <div class="container">
+              <div class="row contact__wrapper">
+                <div class="col-12 form">
+                  <h1>contact us</h1>
+                </div>
+                <form>
+                  <div class="col-12 form">
+                    <h5>name</h5>
+                    <input type="text" class="fname" name="fname"><br><br>
+                    <h5>title</h5>
+                    <input type="text" class="fname" name="fname"><br><br>
+                    <h5>message</h5>
+                    <textarea name="lname" id="lname" cols="40" rows="5"></textarea><br><br>
+                    <button type="submit" class="submit">submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </section>
         </div>
 
-        <script id="template-home" type="text/x-handlebars-template">
-          <div class="container">
-            <div class="row products__wrapper home-links">
-              <div class="col-12 products">
-                <h1>Products</h1></div>
+        <script id="template-product" type="text/x-handlebars-template">
+            <div class="row product__wrapper home-links">
               <div class="w-100"></div>
               <div class="col-5 offset-md-1">
                 <header class="product__header">
-                  <h4 class="product__name no-spacing">{{ name }}</h4>
+                  <h4 class="product__name no-spacing">{{ title }}</h4>
                 </header>
                 <div class="product__description">
                   <p>{{{ description }}}</p>
                 </div>
                 <div class="product__wrapper">
-                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
+                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6><br>
                   <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
+                  <div class="popular">
+                    {{{popular}}}
+                  </div>
                 </div>
               </div>
               <div class="col-5 offset-md-1">
                 <div class="product__images {{ class }}"> <!-- images -->
-                  {{#each images}}
-                  {{{ this }}}
-                  {{/each}}
-                </div>
-              </div>
-              <div class="w-100"></div>
-
-              <div class="col-5 offset-md-1">
-                <div class="product__images {{ class }}"> <!-- images -->
-                  {{#each images}}
-                  {{{ this }}}
-                  {{/each}}
-                </div>
-              </div>
-              <div class="col-5 offset-md-1">
-                <header class="product__header">
-                  <h4 class="product__name no-spacing">{{ name }}</h4>
-                </header>
-                <div class="product__description">
-                  <p>{{{ description }}}</p>
-                </div>
-                <div class="product__wrapper">
-                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
-                  <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
-                </div>
-              </div>
-              <div class="w-100"></div>
-
-              <div class="col-5 offset-md-1">
-                <header class="product__header">
-                  <h4 class="product__name no-spacing">{{ name }}</h4>
-                </header>
-                <div class="product__description">
-                  <p>{{{ description }}}</p>
-                </div>
-                <div class="product__wrapper">
-                  <h5 class="product__roasting no-spacing">roasting: </h5><h6>{{ roasting }}/10</h6>
-                  <h5 class="product__intensity no-spacing">intensity: </h5><h6>{{ intensity }}/10</h6>
-                </div>
-              </div>
-              <div class="col-5 offset-md-1">
-                <div class="product__images {{ class }}"> <!-- images -->
-                  {{#each images}}
-                  {{{ this }}}
-                  {{/each}}
+                  {{{image}}}
                 </div>
               </div>
               <div class="w-100"></div>
             </div>
-          </div>
-          <div class="row about__wrapper">
-            <h2>about us</h2>
-            <div class="container">
-              <p class="about_description">
-                Who are we? Just a bunch of friends with
-                a love for a good coffee and desire to create
-                something new, something original. <br> <br> Our coffees reflect us - young, wild and free.
-                We are on the journey of new tastes...
-              </p>
-              <p class="join__us">
-                Join us!
-              </p>
-            </div>
-          </div>
         </script>
 
         <!--<script id="template-contact" type="text/x-handlebars-template"-->
-          <div class="container">
-            <div class="row contact__wrapper">
-              <div class="col-12 form">
-                <h1>contact us</h1>
-              </div>
-              <form>
-                <div class="col-12 form">
-                  <h5>name</h5>
-                  <input type="text" id="fname" name="fname"><br><br>
-                  <h5>title</h5>
-                  <input type="text" id="fname" name="fname"><br><br>
-                  <h5>message</h5>
-                  <textarea name="lname" id="lname" cols="40" rows="5"></textarea><br><br>
-                  <input type="submit" class="submit" value="Submit">
-                </div>
-              </form>
-            </div>
-          </div>
+          
         <!--</script>-->
 
         <footer class="container">

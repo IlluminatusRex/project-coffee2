@@ -82,4 +82,80 @@ h6 {
     display: block;
   }
 }
+
+
+@media (max-width: 900px) {
+
+  .container {
+    max-width: 767px;
+    margin: auto;
+    padding: 0 20px;
+  }
   
+  h1 {
+    font-size: 40pt;
+    font-family: $main-font;
+    color: $main-color;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+    
+  h2 {
+    font-size: 30pt;
+    font-family: $main-font;
+    color: $main-color;
+    letter-spacing: 200;
+    text-transform: uppercase;
+  }
+    
+  h3 {
+    font-size: 28pt;
+    font-family: $main-font;
+    color: $main-color;
+    letter-spacing: 70;
+    text-transform: uppercase;
+  }
+    
+  h4 {
+    font-size: 18pt;
+    font-family: $body-font;
+    color: $main-color;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 15pt;
+  }
+  
+  h5 {
+    font-size: 10pt;
+    font-family: $body-font;
+    color: $black-color;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 15pt;
+  }
+  
+  h6 {
+    font-size: 10pt;
+    font-family: $body-font;
+    color: $main-color;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 30pt;
+  }
+  
+  .product-description {
+    font-size: 9pt;
+    letter-spacing: 15;
+    font-family: $body-font;
+    line-height: 15pt;
+  }
+    
+  .footer {
+    font-size: 10pt;
+    letter-spacing: 25;
+    font-family: $body-font;
+    line-height: 25pt;
+  }
+
+
+}

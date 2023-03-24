@@ -41,6 +41,7 @@
   font-family: $body-font;
   text-transform: uppercase;
 }
+
 .pages {
   padding-left: 0;
   padding-right: 0;
@@ -286,4 +287,34 @@ footer p{
   text-align: center;
   margin-top: 820px;
   font-family: $body-font;
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+
+  .main-nav {
+    flex-direction: row;
+    height: 200px;
+  }
+  .main-nav a {
+    margin: 0;
+  }
+  .products h1 {
+    font-size: 40pt;
+  }
+  .product__wrapper {
+    flex-direction: column;
+  }
+  .product__wrapper:nth-of-type(2n) {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .popular {
+    width: 500px;
+  }
+  .product__description p {
+    width: 500px;
+  }
+
 }
